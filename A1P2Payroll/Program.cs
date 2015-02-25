@@ -19,15 +19,19 @@ namespace A1P2Payroll
             double federalTax;
             double provincialTax;
             double netPay;
+            double GST = 0.15;
+            double PST = 0.055;
 
-            federalTax = 0.15;
-            provincialTax = 0.055;
             firstName = Convert.ToString("Keshok");
             lastName = Convert.ToString("Sivalingam");
             sinNumber = 123456789;
             payRate = 35.75;
             hoursWorked = 7.5;
 
+            grossPay = payRate * hoursWorked;
+            federalTax = GST * grossPay;
+            provincialTax = PST * grossPay;
+            netPay = grossPay - federalTax - provincialTax;
 
             Console.WriteLine("*******************************************************************************");
             Console.WriteLine("Press any key to continue or exit...");
