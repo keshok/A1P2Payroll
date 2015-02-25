@@ -20,6 +20,15 @@ namespace A1P2Payroll
             double provincialTax;
             double netPay;
 
+            federalTax = 0.15;
+            provincialTax = 0.055;
+            firstName = Convert.ToString("Keshok");
+            lastName = Convert.ToString("Sivalingam");
+            sinNumber = 123456789;
+            payRate = 35.75;
+            hoursWorked = 7.5;
+
+
             Console.WriteLine("*******************************************************************************");
             Console.WriteLine("Press any key to continue or exit...");
             Console.ReadKey();
